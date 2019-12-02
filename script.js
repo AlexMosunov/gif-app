@@ -33,6 +33,7 @@ class DataFromAPI {
       clearInput();
       clearReasults();
       pasteElements(myData);
+      infoButton();
     });
 
     infoButton();
@@ -55,6 +56,7 @@ const controlSearch = async () => {
       document.querySelector(".refresh__btn").addEventListener("click", e => {
         clearReasults();
         pasteElements(newData);
+        infoButton();
       });
       infoButton();
     } catch (error) {

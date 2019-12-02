@@ -14,8 +14,6 @@ class DataFromAPI {
         `http://api.giphy.com/v1/gifs/search?q=${this.query}&api_key=O3iJIz4KNHqyrwfM88y7Abn9WA2607z0&limit=${this.limit}`
       );
       const result = await res.json();
-      //const data = result.data;
-      //console.log(result.data);
       this.result = result.data;
       return result.data;
     } catch (error) {
